@@ -27,4 +27,19 @@ public class DoctorController {
         LocalDate localDate = LocalDate.parse(date);
         return ResponseEntity.ok(doctorService.getAvailableSlots(doctorId, localDate));
     }
+
+    @GetMapping("/api/doctors")
+    public ResponseEntity<?> listDoctors(@RequestParam(required = false) String speciality) {
+        if (speciality == null || speciality.isBlank()) {
+            return ResponseEntity.ok(doctorRepository.findAll());
+        }
+        return ResponseEntity.ok(doctorRepository.findBySpecialityIgnoreCase(speciality));
+    }
+
+    private final com.project.backend.repositories.DoctorRepository doctorRepository;
+
+    public DoctorController(DoctorService doctorService, com.project.backend.repositories.DoctorRepository doctorRepository) {
+        this.doctorService = doctorService;
+        this.doctorRepository = doctorRepository;
+    }
 }
