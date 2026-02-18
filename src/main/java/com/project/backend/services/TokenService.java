@@ -9,12 +9,17 @@ import java.util.Date;
 
 public class TokenService {
     private final String secret = System.getenv().getOrDefault("JWT_SECRET", "change-me-please");
+    private static final long EXPIRATION_TIME = 3600000; // 1 hour in milliseconds
 
     public String generateToken(String email) {
         Key key = getSigningKey();
+        Date now = new Date();
+        Date expiryDate = new Date(now.getTime() + EXPIRATION_TIME);
+        
         return Jwts.builder()
                 .setSubject(email)
-                .setIssuedAt(new Date())
+                .setIssuedAt(now)
+                .setExpiration(expiryDate)
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
     }

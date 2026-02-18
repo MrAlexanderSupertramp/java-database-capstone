@@ -8,33 +8,33 @@ nohup: ignoring input
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.5)
 
-2026-02-18T20:23:21.731Z  INFO 41912 --- [           main] com.project.backend.Application          : Starting Application v0.0.1-SNAPSHOT using Java 25.0.1 with PID 41912 (/workspaces/java-database-capstone/target/smart-clinic-0.0.1-SNAPSHOT.jar started by codespace in /workspaces/java-database-capstone)
-2026-02-18T20:23:21.744Z  INFO 41912 --- [           main] com.project.backend.Application          : No active profile set, falling back to 1 default profile: "default"
-2026-02-18T20:23:23.223Z  INFO 41912 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-18T20:23:23.352Z  INFO 41912 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 4 JPA repository interfaces.
+2026-02-18T20:26:29.689Z  INFO 43789 --- [           main] com.project.backend.Application          : Starting Application v0.0.1-SNAPSHOT using Java 25.0.1 with PID 43789 (/workspaces/java-database-capstone/target/smart-clinic-0.0.1-SNAPSHOT.jar started by codespace in /workspaces/java-database-capstone)
+2026-02-18T20:26:29.700Z  INFO 43789 --- [           main] com.project.backend.Application          : No active profile set, falling back to 1 default profile: "default"
+2026-02-18T20:26:30.958Z  INFO 43789 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-18T20:26:31.068Z  INFO 43789 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
 WARNING: A restricted method in java.lang.System has been called
 WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (jar:file:/workspaces/java-database-capstone/target/smart-clinic-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/tomcat-embed-core-10.1.15.jar!/)
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-2026-02-18T20:23:24.451Z  INFO 41912 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2026-02-18T20:23:24.463Z  INFO 41912 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-18T20:23:24.464Z  INFO 41912 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2026-02-18T20:23:24.579Z  INFO 41912 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-02-18T20:23:24.580Z  INFO 41912 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2691 ms
-2026-02-18T20:23:24.755Z  INFO 41912 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-18T20:23:25.018Z  INFO 41912 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:clinicdb user=SA
-2026-02-18T20:23:25.021Z  INFO 41912 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-18T20:23:25.038Z  INFO 41912 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:clinicdb'
-2026-02-18T20:23:25.201Z  INFO 41912 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-02-18T20:23:25.261Z  INFO 41912 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2026-02-18T20:23:25.263Z  INFO 41912 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2026-02-18T20:23:25.645Z  INFO 41912 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-18T20:23:26.885Z  INFO 41912 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-18T20:23:26.953Z  INFO 41912 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-18T20:23:27.754Z  WARN 41912 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-18T20:23:28.287Z  INFO 41912 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2026-02-18T20:23:28.309Z  INFO 41912 --- [           main] com.project.backend.Application          : Started Application in 7.31 seconds (process running for 8.035)
-2026-02-18T20:23:31.188Z  INFO 41912 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-18T20:23:31.189Z  INFO 41912 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-18T20:23:31.190Z  INFO 41912 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-18T20:26:31.886Z  INFO 43789 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-02-18T20:26:31.898Z  INFO 43789 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-18T20:26:31.899Z  INFO 43789 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2026-02-18T20:26:31.999Z  INFO 43789 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-18T20:26:32.000Z  INFO 43789 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2150 ms
+2026-02-18T20:26:32.056Z  INFO 43789 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-18T20:26:32.383Z  INFO 43789 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:clinicdb user=SA
+2026-02-18T20:26:32.386Z  INFO 43789 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-18T20:26:32.408Z  INFO 43789 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:clinicdb'
+2026-02-18T20:26:32.588Z  INFO 43789 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-18T20:26:32.650Z  INFO 43789 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2026-02-18T20:26:32.653Z  INFO 43789 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-02-18T20:26:32.979Z  INFO 43789 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-18T20:26:34.133Z  INFO 43789 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-18T20:26:34.203Z  INFO 43789 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-18T20:26:35.005Z  WARN 43789 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-18T20:26:35.527Z  INFO 43789 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-18T20:26:35.545Z  INFO 43789 --- [           main] com.project.backend.Application          : Started Application in 6.696 seconds (process running for 7.389)
+2026-02-18T20:26:38.054Z  INFO 43789 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-18T20:26:38.054Z  INFO 43789 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-18T20:26:38.055Z  INFO 43789 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

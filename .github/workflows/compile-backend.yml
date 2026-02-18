@@ -16,5 +16,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Build with Maven
-        run: mvn -B -DskipTests package
+      - name: Navigate to backend directory and build
+        run: |
+          cd /home/runner/work/java-database-capstone/java-database-capstone
+          mvn clean compile -B
+      - name: Package backend with Maven
+        run: |
+          cd /home/runner/work/java-database-capstone/java-database-capstone
+          mvn clean package -DskipTests -B
