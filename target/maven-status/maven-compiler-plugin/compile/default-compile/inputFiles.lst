@@ -1,2 +1,17 @@
+/workspaces/java-database-capstone/src/main/java/com/project/backend/services/AppointmentService.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/controllers/PrescriptionController.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/repositories/DoctorRepository.java
 /workspaces/java-database-capstone/src/main/java/com/project/backend/DataLoader.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/models/Patient.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/controllers/PatientController.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/repositories/PatientRepository.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/repositories/AppointmentRepository.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/models/Appointment.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/controllers/DoctorController.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/controllers/DebugSqlController.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/models/Prescription.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/services/TokenService.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/services/DoctorService.java
 /workspaces/java-database-capstone/src/main/java/com/project/backend/Application.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/models/Doctor.java
+/workspaces/java-database-capstone/src/main/java/com/project/backend/repositories/PrescriptionRepository.java
